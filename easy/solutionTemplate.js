@@ -6,13 +6,13 @@
 function reverseString(str) {
     // TODO: Implement your solution here
     //store the reversed string in an empty string
-    let reversedString = '';
+    reversedString = '';
 
     //Get the lenght of the string
-    let strLength = str.length;
+    strLength = str.length;
 
     //get the last index of the string
-    let i = strLength - 1;
+    i = strLength - 1;
 
   //use a for loop to iterate through the string in reverse
     for (i; i >= 0; i--) {
