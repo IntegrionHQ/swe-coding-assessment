@@ -6,6 +6,22 @@
  */
 function chunkArray(array, size) {
     // TODO: Implement your solution here
+
+    //Store the chuncks in an empty array
+    chunkedArray = [];
+
+    //get the lenght of the array
+    arrayLength = array.length;
+
+    //get the number of chunks
+    numberOfChunks = Math.ceil(arrayLength / size);
+
+    //use a for loop to iterate through the array
+    for (i = 0; i < numberOfChunks; i++) {
+        chunkedArray.push(array.slice(i * size, i * size + size));
+    }
+
+    return chunkedArray;
   }
   
   module.exports = chunkArray;
