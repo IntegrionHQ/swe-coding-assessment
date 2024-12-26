@@ -6,6 +6,15 @@
  */
 function chunkArray(array, size) {
     // TODO: Implement your solution here
+    // Result array to store chunks
+    const Result = [];
+
+    // Start iteration to create chunks
+    for (let x = 0; x < array.length; x += size) {
+      // Push it to the result by slicing a chunk of the specified size
+      Result.push(array.slice(x, x + size));
+    }
+    return Result;
   }
   
   module.exports = chunkArray;
