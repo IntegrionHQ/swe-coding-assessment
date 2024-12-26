@@ -6,6 +6,7 @@
  */
 function chunkArray(array, size) {
     // TODO: Implement your solution here
+
   }
   
   module.exports = chunkArray;
