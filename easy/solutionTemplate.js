@@ -5,6 +5,18 @@
  */
 function reverseString(str) {
     // TODO: Implement your solution here
+    // Variable to store the reversed string
+    let reversedString = '';  
+    
+    // Iterate over the string from the end to the beginning
+    for (let i = str.length - 1; i >= 0; i--) {
+      // Append each character to the reversed string
+        reversedString += str[i];  
+    }
+    
+    // Return statement
+    return reversedString;  
+
   }
   
   module.exports = reverseString;
